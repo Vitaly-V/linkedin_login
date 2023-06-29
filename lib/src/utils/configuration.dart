@@ -55,7 +55,9 @@ class AccessCodeConfiguration implements Config {
       '&client_id=$clientId'
       '&state=$urlState'
       '&redirect_uri=$redirectUrl'
-      '&scope=r_basicprofile%20r_emailaddress%20rw_organization_admin%20w_member_social_feed%20w_organization_social_feed%20r_organization_social_feed';
+      '&scope=r_basicprofile%20r_emailaddress%20rw_organization_admin%20'
+      //'w_member_social_feed%20w_organization_social_feed%20r_organization_social_feed%20'
+      'w_member_social%20w_organization_social%20r_organization_social';
 
   @override
   bool isCurrentUrlMatchToRedirection(String url) => _isRedirectionUrl(url);
