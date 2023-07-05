@@ -56,7 +56,7 @@ class AccessCodeConfiguration implements Config {
       '&state=$urlState'
       '&redirect_uri=$redirectUrl'
       '&scope=r_basicprofile%20r_emailaddress%20rw_organization_admin%20r_organization_followers%20'
-      //'w_member_social_feed%20w_organization_social_feed%20r_organization_social_feed%20'
+      'w_member_social_feed%20w_organization_social_feed%20r_organization_social_feed%20'
       'w_member_social%20w_organization_social%20r_organization_social';
 
   @override
